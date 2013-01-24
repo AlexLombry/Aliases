@@ -1,11 +1,21 @@
-alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'''
-alias ifconfig-ext='curl ifconfig.me'
-alias c='clear'
-alias snifff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
-alias process='ps -ax'
-alias erase='shred -n 35 -z -u'
-alias dss='du -sck * | sort -n'
+#Some useful alias for MacOSX and Linux
 
+Get a better life with those simple alias
+---------------
+
+alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'''
+
+alias ifconfig-ext='curl ifconfig.me'
+
+alias c='clear'
+
+alias snifff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
+
+alias process='ps -ax'
+
+alias erase='shred -n 35 -z -u'
+
+alias dss='du -sck * | sort -n'
 
 extract () {
     if [ -f $1 ] ; then
@@ -33,7 +43,6 @@ function mcd() {
   mkdir -p "$1" && cd "$1";
 }
 
-# go back x directories
 b() {
     str=""
     count=0
@@ -48,6 +57,7 @@ b() {
 ft() {
   find . -name "$2" -exec grep -il "$1" {} \;
 }
+
 
 findreplace(){
     printf "Search: ${1}\n"
