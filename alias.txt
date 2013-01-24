@@ -1,8 +1,3 @@
-#Some useful alias for MacOSX and Linux
-
-Get a better life with those simple alias
----------------
-
 alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'''
 
 alias ifconfig-ext='curl ifconfig.me'
